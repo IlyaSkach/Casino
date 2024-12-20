@@ -1,0 +1,26 @@
+<svg width="563.000000" height="664.000000" viewBox="0 0 563 664" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<linearGradient x1="495.949921" y1="78.899353" x2="80.908051" y2="568.397766" id="paint_linear_21_495_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#FFFB90"/>
+			<stop offset="0.141500" stop-color="#FBEA78"/>
+			<stop offset="0.239200" stop-color="#F8DC65"/>
+			<stop offset="0.270300" stop-color="#E6C758"/>
+			<stop offset="0.336800" stop-color="#C5A041"/>
+			<stop offset="0.397900" stop-color="#AD8330"/>
+			<stop offset="0.451000" stop-color="#9E7226"/>
+			<stop offset="0.490200" stop-color="#996C22"/>
+			<stop offset="0.520000" stop-color="#9D7126"/>
+			<stop offset="0.557500" stop-color="#AA8131"/>
+			<stop offset="0.599100" stop-color="#BE9B42"/>
+			<stop offset="0.643400" stop-color="#DABE5B"/>
+			<stop offset="0.686500" stop-color="#FBE878"/>
+			<stop offset="0.772400" stop-color="#FFFFAA"/>
+			<stop offset="0.833300" stop-color="#FBE878"/>
+			<stop offset="1.000000" stop-color="#A4631B"/>
+		</linearGradient>
+	</defs>
+	<path id="Vector" d="M414.98 29.42C484.01 74.64 482.58 78.95 402.88 61C321.05 43.06 190.83 48.8 165.21 72.49C161.65 75.36 171.61 83.25 186.56 89.71C216.44 101.92 246.33 127.04 246.33 139.24C246.33 143.55 221.42 155.75 190.83 167.23C124.65 190.92 64.16 236.85 25.02 294.27C10.08 315.81 -1.31 334.47 0.12 335.19C0.83 335.9 18.62 332.32 39.97 326.57C114.68 306.48 114.68 306.48 74.83 385.43C41.39 453.62 13.64 539.03 21.46 551.95C23.6 555.54 37.83 547.64 52.06 534C66.29 520.37 82.66 509.6 87.64 509.6C92.62 509.6 99.03 508.88 101.16 507.45C104.01 506.73 106.86 526.11 107.57 549.8C108.99 588.55 131.76 654.59 146.71 663.92C148.84 665.35 150.98 646.69 151.69 623.01C152.4 579.94 165.92 552.67 187.27 552.67C195.1 552.67 195.1 548.36 185.84 530.42C166.63 493.81 159.52 427.06 168.05 371.07C190.83 219.63 315.36 114.12 513.89 76.08L563 66.75L519.59 44.5C480.45 24.4 404.31 0 380.82 0C375.13 0 390.79 12.91 414.98 29.42Z" fill="url(#paint_linear_21_495_0)" fill-opacity="1.000000" fill-rule="nonzero"/>
+</svg>

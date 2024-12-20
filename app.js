@@ -12,6 +12,9 @@ let btn = document.getElementById("btn")
 let count = 0
 
 function spinWheel() {
+    // Отключаем кнопку после первого нажатия
+    btn.disabled = true;
+
     const min = 4;
     const max = 30; 
     const randomNumber = Math.floor(min + (max - min) * Math.random() + 1)
@@ -46,11 +49,9 @@ function spinWheel() {
         name.style.filter = "brightness(40%)"
     }
 
-
-    btn.textContent = "GO"
+    btn.textContent = "Крутить"
     setTimeout(() => {
-        btn.textContent = "Pick up"
+        btn.textContent = "Забрать"
     }, 5000)
-    
 }
 

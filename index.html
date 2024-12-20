@@ -1,33 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Элита Принт Топография</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&display=swap" rel="stylesheet">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Элита Принт Топография</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&display=swap"
+        rel="stylesheet">
+</head>
+
 <body>
     <div class="container">
         <div class="wheel-bg-container">
-            <!-- <img class="img_bg" src="image/bg.png" alt=""> -->
-            <div class="wheel-container">
-                <div class="one slice"><p id="One">+250 к<br>депозиту</p></div>
-                <div class="two slice"><p id="Two">25 <br> FS</p></div>
-                <div class="three slice"><p id="Three">ничего</p></div>
-                <div class="four slice"><p id="Four">100% до<br>$100 сша<br> +100 FS</p></div>
-                <div class="five slice"><p id="Five">50 <br> fs</p></div>
-                <div class="six slice"><p id="Six">50% до<br> $100 </p></div>
-                <div class="seven slice"><p id="Seven">75% до <br> $100 </p></div>
-                <div class="eight slice"><p id="Eight">100 <br> fs</p></div>
-                <img src="image/dragon.png" alt="" class="ws_dragon-window">
+            <div class="wheel-wrapper">
+                <img src="image/bg.png" alt="" class="wheel-svg ">
+                <div class="wheel-container">
+                    <div class="one slice">
+                        <img src="image/1.svg" alt="" class="text-1">
+                    </div>
+                    <div class="two slice">
+                        <img src="image/2.svg" alt="" class="text-2">
+                    </div>
+                    <div class="three slice">
+                        <img src="image/3.svg" alt="" class="text-3">
+                    </div>
+                    <div class="four slice">
+                        <img src="image/4.svg" alt="" class="text-4">
+                    </div>
+                    <div class="five slice">
+                        <img src="image/5.svg" alt="" class="text-5">
+                    </div>
+                    <div class="six slice">
+                        <img src="image/6.svg" alt="" class="text-6">
+                    </div>
+                    <div class="seven slice">
+                        <img src="image/7.svg" alt="" class="text-7">
+                    </div>
+                    <div class="eight slice">
+                        <img src="image/8.svg" alt="" class="text-8">
+                    </div>
+                    <img src="image/dragon.png" alt="" class="ws_dragon-window">
+                </div>
             </div>
+            <!-- <img src="image/fier.svg" alt="" class="fire-svg "> -->
             <img src="image/arrow.png" alt="" class="arrow_window">
         </div>
-        <button onclick="spinWheel()" id="btn">go</button>
+        <button onclick="spinWheel()" id="btn">Крутить</button>
     </div>
     <script src="app.js"></script>
 </body>
+
 </html>
