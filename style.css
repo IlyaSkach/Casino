@@ -1,391 +1,420 @@
 /* Общие стили */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: "Bebas Neue", sans-serif;
-    line-height: 1.6;
-    background-color: #d9d6d3;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* min-height: 100vh; */
-    height: 100%;
-    /* overflow: hidden; */
-    position: relative;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .video-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1;
+body {
+  font-family: "Bebas Neue", sans-serif;
+  line-height: 1.6;
+  background-color: #d9d6d3;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  height: 100%;
+  /* overflow: hidden; */
+  position: relative;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
 }
 
 .video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Контейнер для выравнивания контента */
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  margin-top: 50px;
+}
+
+.title-svg {
+  margin-bottom: 50px;
+}
+
+.title-text {
+  font-family: Bebas Neue;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 44px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 200px;
+
+}
+
+.wheel-bg-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px; /* Минимальный зазор 10px по бокам */
+}
+
+.wheel-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 814px;
+  aspect-ratio: 1; /* Сохраняет соотношение сторон 1:1 */
+}
+
+.wheel-svg {
+  position: absolute;
+  top: -13%;
+  left: -25%;
+  width: 130%;
+  height: 118%;
+  z-index: -1; /* Помещает изображение за колесом */
+}
+
+/* Колесо */
+.wheel-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: transform 5s ease-in-out;
+}
+
+.wheel-container div {
+  height: 57%;
+  width: 48.75%;
+  position: absolute;
+  clip-path: polygon(100% 0, 50% 100%, 0 0);
+  top: -7.65%;
+  transform-origin: bottom;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.78%;
+  font-weight: 400;
+  color: #fff;
+  left: 25.75%;
+}
+
+.ws_dragon-window {
+  position: absolute;
+  width: 14%;
+  height: 14%;
+  z-index: 3;
+}
+
+/* Стили текста */
+p {
+  margin-top: -130px;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+/* Сегменты колеса */
+.one {
+  background: linear-gradient(
+    -19.69deg,
+    rgb(215, 140, 63) 5.11%,
+    rgb(240, 187, 80) 47.524%,
+    rgb(198, 147, 55) 90.795%
+  );
+  transform: rotate(0);
+  filter: brightness(100%);
+  transition: all 0.4s ease-in-out;
+}
+
+.two {
+  background: linear-gradient(
+    41.95deg,
+    rgb(135, 45, 36) 12.361%,
+    rgb(220, 83, 66) 50.15%,
+    rgb(182, 74, 37) 88.702%
+  );
+  transform: rotate(45deg);
+  filter: brightness(100%);
+  transition: all 0.4s ease-in-out;
+}
+
+.three {
+  background: linear-gradient(
+    52.04deg,
+    rgb(154, 80, 37) 10.112%,
+    rgb(236, 170, 77) 52.476%,
+    rgb(224, 175, 70) 95.695%
+  );
+  transform: rotate(90deg);
+  filter: brightness(100%);
+  transition: all 0.4s ease-in-out;
+}
+
+.four {
+  background: linear-gradient(
+    -57.19deg,
+    rgb(39, 11, 23) 13.026%,
+    rgb(59, 16, 27) 47.156%,
+    rgb(56, 14, 13) 81.976%
+  );
+  transform: rotate(135deg);
+  filter: brightness(100%);
+  transition: all 0.4s ease-in-out;
+}
+
+.five {
+  background: linear-gradient(
+    -23.04deg,
+    rgb(194, 53, 48) 4.597%,
+    rgb(194, 66, 49) 43.63%,
+    rgb(107, 39, 21) 83.451%
+  );
+  transform: rotate(180deg);
+  filter: brightness(100%);
+  transition: all 0.4s ease-in-out;
+}
+
+.six {
+  background: linear-gradient(
+    20.49deg,
+    rgb(0, 6, 45) 6.127%,
+    rgb(47, 14, 38) 46.715%,
+    rgb(50, 13, 13) 88.123%
+  );
+  transform: rotate(225deg);
+  filter: brightness(100%);
+  transition: all 0.4s ease-in-out;
+}
+
+.seven {
+  background: linear-gradient(
+    237.14deg,
+    rgb(195, 55, 49) 3.415%,
+    rgb(162, 60, 36) 52.417%,
+    rgb(101, 38, 19) 106.06%
+  );
+  transform: rotate(270deg);
+  filter: brightness(100%);
+  transition: all 0.4s ease-in-out;
+}
+
+.eight {
+  background: linear-gradient(
+    90deg,
+    rgb(68, 19, 14),
+    rgb(77, 21, 16) 50%,
+    rgb(69, 19, 14) 100%
+  );
+  transform: rotate(315deg);
+  filter: brightness(100%);
+  transition: all 0.4s ease-in-out;
+}
+
+/* Кнопка */
+#btn {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 160px;
+  font-size: 58px;
+  font-weight: 600;
+  line-height: 58px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background: linear-gradient(
+    180deg,
+    rgb(242, 180, 16),
+    rgb(241, 113, 16) 100%
+  );
+  border-radius: 30px;
+  cursor: pointer;
+  border: none;
+  filter: brightness(100%);
+  transition: all 0.3s ease-in-out;
+  margin-top: 80px;
+}
+
+#btn:hover {
+  filter: brightness(80%);
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Другие окна */
+.ws_bg2-window {
+  position: absolute;
+  margin-left: -150px;
+  z-index: 1;
+}
+
+.arrow_window {
+  position: absolute;
+  z-index: 4;
+  top: -65px; /* Позиционирование сверху */
+  left: 50%; /* Центрирование по горизонтали */
+  transform: translateX(-50%); /* Центрирование по горизонтали */
+  width: 100px; /* Ширина стрелки */
+  height: auto;
+}
+
+.text-1 {
+  margin-top: -87px;
+  /* transform: rotate(90deg); */
+}
+.text-2 {
+  margin-top: -87px;
+  transform: rotate(-53deg);
+}
+.text-3 {
+  margin-top: -87px;
+  transform: rotate(-96deg);
+}
+.text-4 {
+  margin-top: -87px;
+  transform: rotate(235deg);
+}
+.text-5 {
+  margin-top: -87px;
+  transform: rotate(185deg);
+}
+.text-6 {
+  margin-top: -87px;
+  transform: rotate(131deg);
+}
+.text-7 {
+  margin-top: -87px;
+  transform: rotate(90deg);
+}
+.text-8 {
+  margin-top: -87px;
+  transform: rotate(53deg);
+}
+
+/* Адаптивные стили */
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .video-background {
+    width: 100%;
+    height: 100%;
+  }
+
+  .video-background video {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-  
-  /* Контейнер для выравнивания контента */
+  }
+
   .container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 1200px;
-    height: 100%;
-    margin-top: 50px;
+    padding: 20px;
+    margin-top: 0px;
+  }
+
+  .title-text {
+    font-family: Bebas Neue;
+    font-size: 27px;
+    margin-bottom: 100px; 
   }
 
   .title-svg {
-    margin-bottom: 50px;
+    margin-bottom: 10px; 
   }
-  
-  .wheel-bg-container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    padding: 10px; /* Минимальный зазор 10px по бокам */
-  }
-  
+
   .wheel-wrapper {
-    position: relative;
-    width: 100%;
-    max-width: 814px;
-    aspect-ratio: 1; /* Сохраняет соотношение сторон 1:1 */
+    max-width: 280px;
   }
-  
-  .wheel-svg {
-    position: absolute;
-    top: -13%;
-    left: -25%;
-    width: 130%;
-    height: 118%;
-    z-index: -1; /* Помещает изображение за колесом */
-  }
-  
-  /* Колесо */
-  .wheel-container {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    overflow: hidden;
-    transition: transform 5s ease-in-out;
-  }
-  
+
   .wheel-container div {
-    height: 57%;
-    width: 48.75%;
-    position: absolute;
-    clip-path: polygon(100% 0, 50% 100%, 0 0);
-    top: -7.65%;
-    transform-origin: bottom;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.78%;
-    font-weight: 400;
-    color: #fff;
-    left: 25.75%;
+    height: calc(240px * (280 / 390));
+    width: calc(200px * (280 / 390));
+    top: calc(-40px * (280 / 390));
+    left: calc(100px * (280 / 390));
   }
-  
+
   .ws_dragon-window {
-    position: absolute;
-    width: 14%;
-    height: 14%;
-    z-index: 3;
+    width: 50px;
+    height: 50px;
   }
-  
-  /* Стили текста */
+
   p {
-    margin-top: -130px;
-    font-size: 30px;
-    font-weight: bold;
-    line-height: 30px;
-    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 0px;
   }
-  
-  /* Сегменты колеса */
-  .one {
-    background: linear-gradient(
-      -19.69deg,
-      rgb(215, 140, 63) 5.11%,
-      rgb(240, 187, 80) 47.524%,
-      rgb(198, 147, 55) 90.795%
-    );
-    transform: rotate(0);
-    filter: brightness(100%);
-    transition: all 0.4s ease-in-out;
-  }
-  
-  .two {
-    background: linear-gradient(
-      41.95deg,
-      rgb(135, 45, 36) 12.361%,
-      rgb(220, 83, 66) 50.15%,
-      rgb(182, 74, 37) 88.702%
-    );
-    transform: rotate(45deg);
-    filter: brightness(100%);
-    transition: all 0.4s ease-in-out;
-  }
-  
-  .three {
-    background: linear-gradient(
-      52.04deg,
-      rgb(154, 80, 37) 10.112%,
-      rgb(236, 170, 77) 52.476%,
-      rgb(224, 175, 70) 95.695%
-    );
-    transform: rotate(90deg);
-    filter: brightness(100%);
-    transition: all 0.4s ease-in-out;
-  }
-  
-  .four {
-    background: linear-gradient(
-      -57.19deg,
-      rgb(39, 11, 23) 13.026%,
-      rgb(59, 16, 27) 47.156%,
-      rgb(56, 14, 13) 81.976%
-    );
-    transform: rotate(135deg);
-    filter: brightness(100%);
-    transition: all 0.4s ease-in-out;
-  }
-  
-  .five {
-    background: linear-gradient(
-      -23.04deg,
-      rgb(194, 53, 48) 4.597%,
-      rgb(194, 66, 49) 43.63%,
-      rgb(107, 39, 21) 83.451%
-    );
-    transform: rotate(180deg);
-    filter: brightness(100%);
-    transition: all 0.4s ease-in-out;
-  }
-  
-  .six {
-    background: linear-gradient(
-      20.49deg,
-      rgb(0, 6, 45) 6.127%,
-      rgb(47, 14, 38) 46.715%,
-      rgb(50, 13, 13) 88.123%
-    );
-    transform: rotate(225deg);
-    filter: brightness(100%);
-    transition: all 0.4s ease-in-out;
-  }
-  
-  .seven {
-    background: linear-gradient(
-      237.14deg,
-      rgb(195, 55, 49) 3.415%,
-      rgb(162, 60, 36) 52.417%,
-      rgb(101, 38, 19) 106.06%
-    );
-    transform: rotate(270deg);
-    filter: brightness(100%);
-    transition: all 0.4s ease-in-out;
-  }
-  
-  .eight {
-    background: linear-gradient(
-      90deg,
-      rgb(68, 19, 14),
-      rgb(77, 21, 16) 50%,
-      rgb(69, 19, 14) 100%
-    );
-    transform: rotate(315deg);
-    filter: brightness(100%);
-    transition: all 0.4s ease-in-out;
-  }
-  
-  /* Кнопка */
-  #btn {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 160px;
-    font-size: 58px;
-    font-weight: 600;
-    line-height: 58px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #fff;
-    background: linear-gradient(
-      180deg,
-      rgb(242, 180, 16),
-      rgb(241, 113, 16) 100%
-    );
-    border-radius: 30px;
-    cursor: pointer;
-    border: none;
-    filter: brightness(100%);
-    transition: all 0.3s ease-in-out;
-    margin-top: 80px;
-  }
-  
-  #btn:hover {
-    filter: brightness(80%);
-    border: none;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  /* Другие окна */
-  .ws_bg2-window {
-    position: absolute;
-    margin-left: -150px;
-    z-index: 1;
-  }
-  
+
   .arrow_window {
-    position: absolute;
-    z-index: 4;
-    top: -65px; /* Позиционирование сверху */
-    left: 50%; /* Центрирование по горизонтали */
-    transform: translateX(-50%); /* Центрирование по горизонтали */
-    width: 100px; /* Ширина стрелки */
-    height: auto;
+    width: 25px; /* Уменьшение ширины стрелки для мобильных устройств */
+    top: -15px; /* Позиционирование сверху для мобильных устройств */
   }
-  
+
+  #btn {
+    font-size: 24px;
+    padding: 10px 80px;
+    margin-top: 20px;
+  }
+
   .text-1 {
-    margin-top: -87px;
-    /* transform: rotate(90deg); */
+    width: 77px;
+    margin-top: -47px;
   }
   .text-2 {
-    margin-top: -87px;
-    transform: rotate(-53deg);
+    width: 46px;
+    margin-top: -47px;
   }
   .text-3 {
-    margin-top: -87px;
-    transform: rotate(-96deg);
+    width: 22px;
+    margin-top: -47px;
   }
   .text-4 {
-    margin-top: -87px;
-    transform: rotate(235deg);
+    width: 68px;
+    margin-top: -24px;
   }
   .text-5 {
-    margin-top: -87px;
-    transform: rotate(185deg);
+    width: 22px;
+    margin-top: -47px;
   }
   .text-6 {
-    margin-top: -87px;
-    transform: rotate(131deg);
+    width: 73px;
+    margin-top: -47px;
   }
   .text-7 {
-    margin-top: -87px;
-    transform: rotate(90deg);
+    width: 56px;
+    margin-top: -47px;
   }
   .text-8 {
-    margin-top: -87px;
-    transform: rotate(53deg);
+    width: 55px;
+    margin-top: -47px;
   }
-  
-  /* Адаптивные стили */
-  @media (max-width: 480px) {
-    body {
-      padding: 0;
-      background-image: url('image/mobile-bg.svg'); /* Задний фон для мобильных устройств */
-      background-size: cover;
-      background-position: center;
-    }
-  
-    .container {
-      padding: 20px;
-    }
-  
-    .wheel-wrapper {
-      max-width: 280px;
-    }
-  
-    .wheel-container div {
-      height: calc(240px * (280 / 390));
-      width: calc(200px * (280 / 390));
-      top: calc(-40px * (280 / 390));
-      left: calc(100px * (280 / 390));
-    }
-  
-    .ws_dragon-window {
-      width: 50px;
-      height: 50px;
-    }
-  
-    p {
-      font-size: 16px;
-      line-height: 16px;
-      margin-top: 0px;
-    }
-  
-    .arrow_window {
-      width: 25px; /* Уменьшение ширины стрелки для мобильных устройств */
-      top: -15px; /* Позиционирование сверху для мобильных устройств */
-    }
-  
-    #btn {
-      font-size: 24px;
-      padding: 10px 80px;
-      margin-top: 20px;
-    }
-  
-    .text-1 {
-      width: 77px;
-      margin-top: -47px;
-    }
-    .text-2 {
-      width: 46px;
-      margin-top: -47px;
-    }
-    .text-3 {
-      width: 22px;
-      margin-top: -47px;
-    }
-    .text-4 {
-      width: 68px;
-      margin-top: -24px;
-    }
-    .text-5 {
-      width: 22px;
-      margin-top: -47px;
-    }
-    .text-6 {
-      width: 73px;
-      margin-top: -47px;
-    }
-    .text-7 {
-      width: 56px;
-      margin-top: -47px;
-    }
-    .text-8 {
-      width: 55px;
-      margin-top: -47px;
-    }
-  }
-
-
-
-
-
-
+}
