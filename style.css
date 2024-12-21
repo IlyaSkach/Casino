@@ -262,11 +262,11 @@ p {
   margin-top: 80px;
 }
 
-#btn:hover {
+/* #btn:hover {
   filter: brightness(80%);
   border: none;
   transition: all 0.3s ease-in-out;
-}
+} */
 
 #btn.highlight {
     box-shadow: 0 0 20px 5px rgba(255, 255, 0, 0.7); /* Подсветка кнопки */
