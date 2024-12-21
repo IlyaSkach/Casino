@@ -14,6 +14,7 @@ let count = 0
 function spinWheel() {
     // Отключаем кнопку после первого нажатия
     btn.disabled = true;
+    btn.classList.add('dimmed'); // Добавляем класс для затемнения
 
     const min = 4;
     const max = 30; 
@@ -38,6 +39,7 @@ function spinWheel() {
         // Включаем кнопку снова после завершения анимации
         btn.textContent = "Забрать"
         btn.disabled = false; // Включаем кнопку снова
+        btn.classList.remove('dimmed'); // Убираем класс для затемнения
         btn.classList.add('highlight');
 
         btn.addEventListener('click', () => {
