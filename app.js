@@ -34,6 +34,15 @@ function spinWheel() {
         filter(six)
         filter(seven)
         filter(eight)
+
+        // Включаем кнопку снова после завершения анимации
+        btn.textContent = "Забрать"
+        btn.disabled = false; // Включаем кнопку снова
+        btn.classList.add('highlight');
+
+        btn.addEventListener('click', () => {
+            window.location.href = 'https://snaket.net'; // Переход на другой сайт
+        }, { once: true }); // Обработчик срабатывает только один раз
     }, 5000)    
 
     one.style.filter = "brightness(100%)"
@@ -48,12 +57,5 @@ function spinWheel() {
     function filter(name) {
         name.style.filter = "brightness(40%)"
     }
-
-    btn.textContent = "Забрать"
-    btn.disabled = false; // Включаем кнопку снова
-
-    btn.addEventListener('click', () => {
-        window.location.href = 'https://snaket.net'; // Переход на пустую страницу
-    }, { once: true }); // Обработчик срабатывает только один раз
 }
 
