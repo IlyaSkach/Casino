@@ -49,9 +49,11 @@ function spinWheel() {
         name.style.filter = "brightness(40%)"
     }
 
-    btn.textContent = "Крутить"
-    setTimeout(() => {
-        btn.textContent = "Забрать"
-    }, 5000)
+    btn.textContent = "Забрать"
+    btn.disabled = false; // Включаем кнопку снова
+
+    btn.addEventListener('click', () => {
+        window.location.href = 'https://snaket.net'; // Переход на пустую страницу
+    }, { once: true }); // Обработчик срабатывает только один раз
 }
 
